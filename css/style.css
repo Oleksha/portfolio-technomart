@@ -1,2 +1,102 @@
-/* CSS Document */
+body {
+  margin: 0;
+  padding: 0;
+  
+  font-family: 'PT Sans', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  
+  min-width: 960px;
+}
 
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.main-header {
+  font-family: 'Cuprum', Arial, sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  min-height: 320px;
+  
+  background-color: #f2f6f8;
+}
+
+.menu-top {
+  position: relative;
+  min-height: 42px;
+  margin-bottom: 45px;
+  
+  color: #ffffff;
+  background-color: #293449;
+}
+
+.menu-top form {
+  flex-grow: 1;
+}
+
+.top-menu {
+  display: flex;
+}
+
+.logo {
+  display: flex;
+  
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  
+  width: 220px;
+  height: 42px;
+  
+  font-size: 23px;
+  background-color: #ee3643;
+}
+
+.logo::before {
+  position: absolute;
+  
+  content: "";
+  width: 220px;
+  height: 4px;
+  bottom: -4px;
+  
+  background-color: #b52933;
+}
+
+.logo:hover {
+  background-color: #ca2c37;
+}
+
+.logo:hover::before {
+  background-color: #9a212a;
+}
+
+.top-menu ul {
+  margin: 0;
+  padding: 0;
+  
+  list-style: none;
+}
+.order {
+  display: flex;
+  
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  
+  width: 150px;
+  height: 42px;
+  
+  font-size: 17px;
+  background-color: #63a63e;
+}
+
+.order:hover {
+  background-color: #5fbb2d;
+}
