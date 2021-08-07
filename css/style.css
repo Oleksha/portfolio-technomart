@@ -32,8 +32,33 @@ body {
   background-color: #293449;
 }
 
-.menu-top form {
+.form-find {
+  display: flex;
+  align-items: center;
   flex-grow: 1;
+}
+
+.form-find svg {
+  margin-left: 17px;
+  opacity: 0.3;
+}
+.form-find:hover svg {
+  opacity: 1;
+}
+
+.menu-top form:focus-within path {
+  fill: #ee3643;
+}
+.form-find:focus-within {
+  background-color: #ffffff; 
+  color: #000000;
+}
+
+.form-find:focus-within input {
+  outline: none !important;  
+}
+.form-find:focus-within svg {
+  opacity: 1;
 }
 
 .top-menu {
@@ -75,18 +100,85 @@ body {
   background-color: #9a212a;
 }
 
-.top-menu ul {
+.logo:active {
+  background-color: #ba2732;
+}
+
+.logo:active::before {
+  background-color: #8e1e26;
+}
+
+.form-search {
+  position: relative;
   margin: 0;
   padding: 0;
-  
-  list-style: none;
+  border: 0;
+  flex-grow: 1;
+  background-color: transparent;
+  padding-left: 15px;
+  color: inherit;
+  font: inherit;/*
+  background-image: url("../img/icon-search.svg");
+  background-position: 16px center;
+  background-repeat: no-repeat;  */
 }
+
+.bookmark,
+.cart {
+  position: relative;
+  display: flex;
+  margin-right: 10px;
+  padding-left: 40px;
+  padding-right: 20px;
+  
+  color: #ffffff;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.bookmark::before {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 16px;
+  left: 13px;
+  top: 13px;
+  
+  background-image: url("../img/icon-bookmark.svg");
+  opacity: 0.3;
+}
+.cart::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  left: 13px;
+  top: 13px;
+  
+  background-image: url("../img/icon-cart.svg");
+  opacity: 0.3;
+}
+.bookmark:hover::before,
+.cart:hover::before {
+  opacity: 1;
+}
+
+.bookmark:active::before,
+.cart:active::before {
+  opacity: 0.5;
+}
+
+.bookmark:active,
+.cart:active {
+  opacity: 0.6;
+}
+
 .order {
   display: flex;
   
   color: #ffffff;
   text-decoration: none;
-  text-transform: uppercase;
   align-items: center;
   justify-content: center;
   
